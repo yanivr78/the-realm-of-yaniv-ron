@@ -1,47 +1,24 @@
-# Fullfillment SaaS — Marketing & Operations Control Tower Website (`fulfillment-saas-web`)
+# The Realm of Yaniv Ron — Interactive 3D Command Citadel & Web Audio Showcase
 
-Modern Next.js + TypeScript showcase and interactive Operations Control Tower sandbox for the Multi-Tenant 3PL Fulfillment SaaS platform (`yanivr78/fulfillment-saas-web`).
+Welcome to **The Realm of Yaniv Ron**, an interactive creative engineering showcase combining custom 60fps HTML5 3D projection, polyphonic Web Audio API synthesis, Doppler starfighter flybys, and an interactive community transmission wall.
 
-## What's Inside (Initial Release)
-- **Hero & Real-Time Platform Invariants**: Showcases the core conservation invariant (`available = on_hand - reserved - quarantined - damaged`), inbound quarantine-first ASN receiving, and 100-way concurrent order allocation.
-- **Interactive Warehouse Control Tower Simulator**:
-  - **Live Inventory & Order Floor Simulator**: Receive ASNs into quarantine, complete putaway into storage bins, allocate orders with atomic reservation locks, and step orders through `ALLOCATED -> PICKED -> PACKED -> SHIPPED`.
-  - **Multi-Tenant RBAC & PostgreSQL RLS Scope Tester**: Switch between `TENANT_ADMIN`, `WAREHOUSE_OPERATOR`, `MERCHANT_USER`, and a cross-tenant principal to inspect RLS policy enforcement.
-  - **Interactive API & Webhook Payload Explorer**: Inspect JSON contracts for `/api/v1/orders`, `/api/v1/asns/:id/receive`, and HMAC-verified `/api/v1/webhooks/carrier/fedex`.
-- **Six Architectural Bento Pillars & Protected API Surface Matrix**
-- **3PL SaaS Pricing Tiers**: Growth 3PL Node, Enterprise Control Tower, and Dedicated Sovereign Cloud.
+## Featured Creative & Technical Modules
+
+- **Polyphonic Web Audio Synthesizer & X-Wing Flyby Engine (`app/components/StarWarsAudioAndXWingEngine.tsx`):**
+  - Zero-dependency Web Audio API synthesizer performing the *Imperial March* on launch alongside procedural twin-ion turbine Doppler flybys and quad laser cannon blasts.
+- **Interactive Holonet Community Wall (`app/components/RealmPostWall.tsx`):**
+  - Visitors can publish transmissions, status updates, and squadron dispatches directly to the Realm Wall (persisted in `localStorage`), triggering celebratory X-Wing flybys.
+- **3D Spatial Command Citadel (`app/components/Warehouse3DScene.tsx` & `app/components/Tilt3DCard.tsx`):**
+  - Interactive 60fps 3D spatial viewport with orbital camera presets and 3D perspective-tilt telemetry cards.
 
 ## Local Development
 
 ```bash
 npm install
 npm run dev
+npm run build
 ```
 
-Open `http://127.0.0.1:3000` in your browser.
+## Portfolio Ecosystem
 
-## Publishing to `https://github.com/yanivr78/fulfillment-saas-web`
-
-Run the included helper script to initialize the standalone Git repository, create the private repository under `yanivr78`, and push `main`:
-
-```bash
-bash scripts/create-and-push-repo.sh
-```
-
-## Free Hosting & One-Command Deployment
-
-The project is pre-configured for static export (`output: 'export'` in `next.config.mjs`) and supports the three best free Next.js/static hosting platforms out of the box:
-
-1. **Vercel (Hobby Free Tier — supports private GitHub repos for free)**:
-   ```bash
-   DEPLOY_PROVIDER=vercel bash scripts/deploy-free-hosting.sh
-   ```
-2. **Cloudflare Pages (Free Tier — unlimited static bandwidth & private GitHub repo integration)**:
-   ```bash
-   DEPLOY_PROVIDER=cloudflare bash scripts/deploy-free-hosting.sh
-   ```
-3. **GitHub Pages (Free via included `.github/workflows/deploy-pages.yml`)**:
-   ```bash
-   DEPLOY_PROVIDER=gh-pages bash scripts/deploy-free-hosting.sh
-   ```
-
+- For the enterprise B2B 3PL SaaS Operations Control Tower & Digital Twin showcase, visit **[`yanivr78/fulfillment-saas-web`](https://github.com/yanivr78/fulfillment-saas-web)**.

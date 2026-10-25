@@ -1,5 +1,5 @@
 {
-  "name": "fulfillment-saas-web",
+  "name": "the-realm-of-yaniv-ron",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -20,5 +20,6 @@
     "@types/react-dom": "^19.0.0",
     "tailwindcss": "^4.0.0",
     "typescript": "^5.0.0"
-  }
+  },
+  "description": "The Realm of Yaniv Ron \u2014 Interactive 3D Spatial Command Center, Web Audio Synthesizer & Community Wall"
 }
